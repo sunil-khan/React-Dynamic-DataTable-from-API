@@ -1,0 +1,26 @@
+.marginTop{
+   margin-top: 20px; 
+}
+
+.marginBottom
+{
+    margin-bottom: 20px;
+}
+
+.textWrap
+{
+    white-space: nowrap; 
+    max-width: 200px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+ 
+
+}
+.paddingRight
+{
+    padding-right: 10px;
+}
+.paddingLeft
+{
+    padding-left: 10px;
+}
