@@ -16,7 +16,7 @@
 
 	useEffect(() => 
 	{
-		fetch("https://sievo-react-assignment.azurewebsites.net/api/data")
+		fetch("Your API")
 			.then(response => response.json())
 			.then(json => {
 				setProjects(json);
