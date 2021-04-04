@@ -20,39 +20,40 @@ const Header = ({projects, onSorting}) =>
         setSortingIcon(true)
         
     }
-    const sortField = (fieldName) =>
-    {
-        return fieldName == 'start date' ?
-        (
-            <div  onClick= {() => onSortingChange(fieldName)}>
-                        {fieldName}
+    //Function to Sort one or more fields
+//     const sortField = (fieldName) =>
+//     {
+//         return fieldName == 'start date' ?
+//         (
+//             <div  onClick= {() => onSortingChange(fieldName)}>
+//                         {fieldName}
                         
-                        {sortingField && sortingField === fieldName && 
-                        (
-                            <span className={Styles.paddingLeft}>
+//                         {sortingField && sortingField === fieldName && 
+//                         (
+//                             <span className={Styles.paddingLeft}>
                                 
-                                <FontAwesomeIcon  icon=
-                            {
-                                    sortingOrder === "asc"
-                                        ? faAngleUp
-                                        : faAngleDown
-                            }
-                            /> 
-                            </span>
-                        )} 
-            </div>) :
-        (
-            <div>{fieldName}</div>
-        )
+//                                 <FontAwesomeIcon  icon=
+//                             {
+//                                     sortingOrder === "asc"
+//                                         ? faAngleUp
+//                                         : faAngleDown
+//                             }
+//                             /> 
+//                             </span>
+//                         )} 
+//             </div>) :
+//         (
+//             <div>{fieldName}</div>
+//         )
 
-    }
+//     }
 
     const columns =  projects[0] ? Object.keys(projects[0]) : null
     return (
     <thead className="thead-dark">
         <tr>{ projects[0] ? columns.map((heading,index) => 
             <th key = {index} style={{textTransform: 'capitalize'}}>
-                {sortField(heading)} </th>) : null}
+                {heading} </th>) : null}
             </tr>
     </thead> 
     )
