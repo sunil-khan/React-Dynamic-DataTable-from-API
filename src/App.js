@@ -53,7 +53,7 @@
 
 	return (
 		<div className={`${Styles.marginTop} container`}>
-			<h4 className="text-center">Sievo Assignment</h4>
+			<h4 className="text-center">React Assignment</h4>
 			<h5 className="text-center">Project's Record</h5>
 			<div className="col-12">
 				<div className={Styles.marginBottom}> 
